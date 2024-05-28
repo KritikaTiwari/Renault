@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 const dbconfig= require("./config/dbconfig");
 const path = require('path'); //to deploy
 dotenv.config();
-dbconfig();
+
 const app= express();
 app.use(express.json());
 app.use(morgan('dev'));
